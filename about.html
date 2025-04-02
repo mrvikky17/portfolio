@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Vikky Kushwah</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1e1e2f, #28293e);
+            color: #fff;
+            overflow-x: hidden;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .profile-pic {
+            width: 140px;
+            height: 145px;
+            border-radius: 50%;
+            border: 5px solid #00aaff;
+            box-shadow: 0 0 15px #00aaff;
+            transition: transform 0.3s ease-in-out;
+        }
+        .profile-pic:hover {
+            transform: scale(1.1);
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin: 20px 0 10px;
+        }
+        p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            color: #00aaff;
+            font-size: 1.8rem;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #ffcc00;
+        }
+        .animated-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: url('https://source.unsplash.com/random/1600x900/?technology') no-repeat center;
+            background-size: cover;
+            opacity: 0.1;
+            z-index: -1;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .fade-in {
+            animation: fadeInUp 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="animated-bg"></div>
+    <div class="container">
+        <img src="assets/vikky1.jpg" alt="Vikky Kushwah" class="profile-pic fade-in">
+        <h1 class="fade-in">Vikky Kushwah</h1>
+        <p class="fade-in">Hey there! I'm a passionate Computer Science student at GLA University, Mathura, specializing in Machine Learning. 
+            I thrive on building innovative AI solutions, developing intelligent systems, and crafting engaging web experiences. 
+            Whether it's deep learning, chatbot development, or WEB development, I'm always eager to push the boundaries of technology.</p>
+        <div class="social-icons fade-in">
+            <h3>Connect Me👇</h3>
+            <a href="https://github.com/mrvikky17" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/vikky-kushwah-838513254/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://x.com/Vikky_kush_?t=8zeQp30jOgMiOobh4RdniQ&s=08 " target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+</body>
+</html>
